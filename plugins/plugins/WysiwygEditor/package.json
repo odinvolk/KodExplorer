@@ -1,0 +1,46 @@
+{
+    "id":"WysiwygEditor",
+    "name":"WysiwygEditor",
+    "title":"{{LNG.WysiwygEditor.meta.title}}",
+    "version":"1",
+    "category":"file",
+    "source":{
+        "screenshoot":[
+            "{{pluginHost}}static/images/screenshoot1.png",
+            "{{pluginHost}}static/images/screenshoot2.png"
+        ],
+        "className":"x-item-file x-dwg",
+        "icon":"{{pluginHost}}static/images/icon.png"
+    },
+    "description":"{{LNG.WysiwygEditor.meta.desc}}",
+    "keywords":"wysiwyg,editor",
+    "auther":{
+        "copyright":"simon511000",
+        "homePage":"https://simon511000.fr"
+    },
+    "configItem":{
+        "plugins":{
+            "type":"tags",
+            "display":"Plugins",
+            "value":"picture,link,video,table,undo,redo,help",
+            "desc":"{{LNG.WysiwygEditor.config.plugins.desc}}"
+        },
+        "fileExt":{
+			"type":"tags",
+			"display":"{{LNG.Plugin.Config.fileExt}}",
+			"desc":"{{LNG.Plugin.Config.fileExtDesc}}",
+			"value":"wysiwyg"
+		},
+		"fileSort":{
+			"type":"number",
+			"display":"{{LNG.Plugin.Config.fileSort}}",
+			"desc":"{{LNG.Plugin.Config.fileSortDesc}}",
+			"value":500
+		}
+    },
+    "formStyle":{
+            "loadFile":[
+                "{{pluginHost}}static/main.js"
+            ]
+        }
+}

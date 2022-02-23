@@ -1,0 +1,23 @@
+{
+	"id":"macClock",
+	"name":"macclock",
+	"title":"MAC clock",
+	"version":"1.0",
+	"source":{
+		"className":"font-icon icon-time bg-blue-6"
+	},
+	"description":"Часы настольные украшения(desktop widget)",
+	"auther":{
+		"copyright":"odinvolk.",
+		"homePage":"http://www.odinvolk.com",
+	},
+	"configItem":{
+		"pluginAuth":{
+			"type":"userSelect",
+			"value":"all:1",
+			"display":"{{LNG.Plugin.config.auth}}",
+			"desc":"{{LNG.Plugin.config.authDesc}}",
+			"require":0
+		}
+	}
+}

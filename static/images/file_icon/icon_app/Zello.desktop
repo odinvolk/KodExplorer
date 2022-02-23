@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Zello
+Exec=env WINEPREFIX="/home/xbmc/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/xbmc/.wine/dosdevices/c:/users/Public/Рабочий\\ стол/Zello.lnk
+Type=Application
+StartupNotify=true
+Path=/home/xbmc/.wine/dosdevices/c:/Program Files/Zello/Snd
+Icon=8335_Zello.0

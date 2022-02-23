@@ -1,0 +1,71 @@
+{
+    "name": "Litewrite",
+    "icons": [
+        {
+            "src": "https://raw.githubusercontent.com/litewrite/screenshots/master/litewrite-kindle-big.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "density": "1"
+        },
+        {
+            "src": "img/litewrite-touch.png",
+            "sizes": "144x144",
+            "type": "image/png",
+            "density": "1"
+        },
+        {
+            "src": "img/litewrite.png",
+            "sizes": "16x16",
+            "type": "image/png",
+            "density": "1"
+        }
+    ],
+    "start_url": "/",
+    "display": "fullscreen",
+    "orientation": "landscape",
+    "short_description": "distraction-free writing and notes",
+    "description": "This is a distraction-free app designed for simple note taking and writing. It works offline and your browser will keep your data saved (nerd facts: AppCache & localStorage). You can also synchronize your notes to different devices using the open remoteStorage standard.",
+    "license": "AGPLv3",
+    "license_url": "https://raw.githubusercontent.com/litewrite/litewrite/gh-pages/license.txt",
+    "source_url": "https://github.com/litewrite/litewrite",
+    "version": "0.0.1",
+    "developer": {
+        "name": "Jan-Christoph Borchardt & Jorin Vogel",
+        "url": "http://litewrite.net"
+    },
+    "wikipedia_url": "",
+    "default_locale": "en",
+    "protocols": [
+        "remoteStorage"
+    ],
+    "categories": [
+        {
+            "name": "BSD",
+            "subcategories": [
+                "Notes",
+                "Tools"
+            ]
+        },
+        {
+            "name": "GNU/Linux",
+            "subcategories": [
+                "Notes",
+                "Tools"
+            ]
+        },
+        {
+            "name": "OS X",
+            "subcategories": [
+                "Notes",
+                "Tools"
+            ]
+        },
+        {
+            "name": "Windows",
+            "subcategories": [
+                "Notes",
+                "Tools"
+            ]
+        }
+    ]
+}

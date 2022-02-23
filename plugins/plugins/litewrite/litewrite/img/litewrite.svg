@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xlink="http://www.w3.org/1999/xlink"
+   version="1.0"
+   id="Capa_1"
+   x="0px"
+   y="0px"
+   width="16"
+   height="16"
+   viewBox="0 0 11.111111 11.111111"
+   enable-background="new 0 0 100 100"
+   space="preserve"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="litewrite.svg"
+   inkscape:export-filename="/home/user/litewrite/img/litewrite.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <metadata
+     id="metadata3059">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3057" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1280"
+     inkscape:window-height="800"
+     id="namedview3055"
+     showgrid="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="13.111111"
+     inkscape:cx="9.9107638"
+     inkscape:cy="14.117995"
+     inkscape:window-x="0"
+     inkscape:window-y="-31"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Capa_1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3061"
+       empspacing="4"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
+  </sodipodi:namedview>
+  <path
+     d="M 8 0 C 3.5889603 0 -2.9959246e-17 3.5889603 0 8 C 5.7824116e-19 12.411521 3.5889603 16 8 16 C 12.411521 16 16 12.411521 16 8 C 16 3.5889603 12.411521 -2.9959246e-17 8 0 z M 8 2 C 11.30864 2 14 4.6917195 14 8 C 14 11.308639 11.30864 14 8 14 C 4.6917198 14 2 11.308641 2 8 C 2 4.6917209 4.6917198 2 8 2 z "
+     transform="scale(0.69444444,0.69444444)"
+     id="path3053" />
+</svg>

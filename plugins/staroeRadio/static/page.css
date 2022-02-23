@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    background:#000;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 8pt;
+}
+
+.s_player{
+    margin: 0 auto;
+    margin-top:30px;
+    width:306px;
+    height:213px;
+    /*border:1px solid #fff;*/
+    background:url(img/screen9.jpg) #000;
+}
+
+.s_br128{
+    display:block;
+    position:relative;
+    width:48px;
+    height:25px;
+    left:75px;
+    top:16px;
+    background:url(img/btn_br_no.png);
+    background-repeat:no-repeat;
+    text-align:center;
+    padding-top:6px;
+    padding-left:3px;
+    cursor: pointer;
+}
+
+.s_br64{
+    display:block;
+    position:relative;
+    width:48px;
+    height:25px;
+    left:75px;
+    top:15px;
+    background:url(img/btn_br_no.png);
+    background-repeat:no-repeat;
+    text-align:center;
+    padding-top:6px;
+    padding-left:3px;
+    cursor: pointer;
+}
+
+.s_br32{
+    display:block;
+    position:relative;
+    width:48px;
+    height:25px;
+    left:75px;
+    top:14px;
+    background:url(img/btn_br_no.png);
+    background-repeat:no-repeat;
+    text-align:center;
+    padding-top:6px;
+    padding-left:3px;
+    cursor: pointer;
+}
+
+.s_r1{
+    display:block;
+    position:relative;
+    width:100px;
+    height:25px;
+    left:8px;
+    top:15px;
+    background:url(img/btn_no.png);
+    background-repeat:no-repeat;
+    text-align:center;
+    padding-top:8px;
+    padding-right:3px;
+    cursor: pointer;
+}
+
+.s_r2{
+    display:block;
+    position: relative;
+    width:100px;
+    height:25px;
+    left:8px;
+    top:12px;
+    background:url(img/btn_no.png);
+    background-repeat:no-repeat;
+    text-align:center;
+    padding-top:8px;
+    padding-right:3px;
+    cursor: pointer;
+}
+
+.s_r3{
+    display:block;
+    position: relative;
+    width:100px;
+    height:25px;
+    left:8px;
+    top:9px;
+    background:url(img/btn_no.png);
+    background-repeat:no-repeat;
+    text-align:center;
+    padding-top:8px;
+    padding-right:3px;
+    cursor: pointer;
+}
+
+.s_pwr{
+    display:inline-block;
+    position: relative;
+    width:48px;
+    height:25px;
+    left:33px;
+    top:78px;
+    background:url(img/btn_on_n.png);
+    cursor: pointer;
+}
+
+.s_txt{
+    display:inline-block;
+    position: relative;
+    text-align:center;
+    width:142px;
+    height:12px;
+    left:109px;
+    top:9px;
+    font-weight: bold;
+}
+
+.s_indicator{
+    display:block;
+    position:relative;
+    width:40px;
+    height:40px;
+    left:156px;
+    top:26px;
+}

@@ -1,0 +1,29 @@
+{
+	"id":"staroeRadio",
+	"name":"{{LNG.staroeRadio.meta.title}}",
+	"title":"Старое радио",
+	"version":"1.1",
+	"source":{
+		"icon":"{{pluginHost}}/static/images/icon.png",
+		"screenshoot":[
+			"{{pluginHost}}static/images/audiopedia.jpg",
+			"{{pluginHost}}static/images/screenshot2.png"
+		]
+	},
+	"category":"tools,file",
+	"description":"{{LNG.staroeRadio.meta.desc}}",
+	"keywords":"",
+	"auther":{
+		"copyright":"odinvolk",
+		"homePage":"http://www.odinvolk.com",
+	},
+	"configItem":{
+		"pluginAuth":{
+			"type":"userSelect",
+			"value":"all:1",
+			"display":"{{LNG.Plugin.config.auth}}",
+			"desc":"{{LNG.Plugin.config.authDesc}}",
+			"require":1
+		}
+	}
+}

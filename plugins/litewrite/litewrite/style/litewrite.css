@@ -1,0 +1,467 @@
+html, body {
+	margin: 0;
+  padding: 0;
+  overflow: hidden;
+	color: #000;
+	background: #fcfcfc url(../img/noise.png) repeat;
+	font:16px FreeSans, Helvetica, sans-serif;
+}
+
+
+@font-face {
+  font-family: 'Alegreya';
+  font-weight: normal;
+  src: url(Alegreya-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Alegreya';
+  font-weight: bold;
+  src: url(Alegreya-Bold.ttf);
+}
+
+/* for cyrillic text */
+@font-face {
+  font-family: 'Gregor';
+  font-weight: normal;
+  src: url(Gregor-Regular.otf);
+}
+
+.scrollbox {
+	height: 100%;
+	margin: 0 0 0 16%;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	background-color: transparent;
+}
+
+.hide {
+	display: none !important;
+}
+
+body > .scrollbox {
+  width: 84%;
+  position: fixed;
+}
+
+.editor , .backdrop {
+  position: relative;
+  width: 96%;
+  margin: 3.5% 0 0 4%; /* make sure cursor is not hidden in very top left corner */
+  padding: 0 20% 8% 0;
+  min-height: 88%;
+  font: normal 24px/150% 'Alegreya', Georgia, serif;
+  outline: none;
+  overflow: auto;
+  border: none;
+  background: transparent;  /* firefox mobile has a gradient otherwise */
+  -webkit-overflow-scrolling: touch; /* enable native smooth scrolling on iOS */
+  word-wrap: break-word; /* prevent scrolling for long words or links without whitespace */
+  -webkit-tap-highlight-color: rgba(0,0,0,0); /* prevent grey flash when clicking */
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+	resize: none;
+}
+
+.editor.cyrillic {
+  font-family: 'Gregor', Georgia, serif;
+}
+
+.editor.rtl {
+  direction: rtl;
+}
+
+.date {
+	position: relative;
+	float: left;
+	margin: 0 0 2% 4%;
+	opacity: .2;
+	font-size: 14px;
+  cursor: default;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+aside > .scrollbox{
+  width:100%;
+  margin:0;
+}
+
+aside {
+  position: fixed;
+  width: 16%;
+  min-width: 135px;
+  height: 100%;
+  padding-right: 5px; /* If the sidebar has a scrollbar, there should be some space */
+  opacity: 0;
+  overflow: auto;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  /* prevent grey flash when clicking */
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  transition: opacity 0.4s;
+  -webkit-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  -ms-transition: opacity 0.4s;
+}
+
+aside:hover,
+aside:focus,
+.show-aside aside {
+  opacity: 1;
+}
+
+.search {
+  display: block;
+  opacity: 0.5;
+  z-index: 100;
+  width: 76%;
+  font-size: 16px;
+  margin: 18px 15px 15px 17px;
+  padding: 0;
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #999;
+  height: 33px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  /* Default search style in Safari conflicts with our styling */
+  -webkit-appearance: textfield;
+}
+
+.search:hover,
+.search:focus {
+  opacity: 1;
+}
+
+.search.hide {
+  height: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+aside a,
+.add {
+	display: block;
+  cursor: pointer;
+  outline: none;
+	color: #444;
+  text-decoration: none;
+	white-space: nowrap;
+  overflow: hidden;
+}
+
+.add {
+	position: relative;
+	color: #999;
+	padding: 18px 18px 4px 18px;
+	font-weight: bold;
+}
+
+.add:hover, .add:focus {
+  color: #000;
+}
+
+.entries {
+	height: auto;
+  display: block;
+	margin: 0;
+	padding: 0;
+	padding-top: 7px;
+	-webkit-overflow-scrolling: touch; /* enable native smooth scrolling on iOS */
+	list-style: none;
+}
+
+.entries a {
+	text-overflow: ellipsis;
+  height: 1.35em;
+  padding: .5em 0 .5em 1.2em;
+	-webkit-tap-highlight-color: rgba(0,0,0,0); /* prevent grey flash when clicking */
+}
+
+.entries a:hover,
+.entries a:focus,
+.entries .selected {
+	color: #000;
+}
+
+.entries .selected {
+	font-weight: bold;
+}
+
+.entries li:last-child {
+	margin-bottom: 50px; /* some space after the last document in the list */
+}
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  padding: 1em 2em;
+  font-size: .7em;
+  white-space: nowrap;
+  cursor: default;
+  text-shadow: 1px 0 white, 0 1px white, -1px 0 white, 0 -1px white;
+}
+
+footer a {
+  display: inline;
+  padding: 0;
+  cursor: alias;
+}
+
+#remotestorage-connect {
+  position: absolute;
+  top: 0 !important;
+	right: 3px !important;
+  z-index: 100000;
+  /* Add some space on left to keep menu button visible on mobile */
+  margin-left: 36px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+::-webkit-scrollbar {
+  width: .2em;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(50,50,50,.3);
+}
+
+::selection {
+  background-color: rgba(255,255,0,.5);
+}
+
+::-moz-selection {
+  background-color: rgba(255,255,0,.5);
+}
+
+
+.menu-button {
+	display: none;
+}
+
+.actions {
+	color: #444;
+  opacity: .5;
+	font-size: 14px;
+	float: right;
+	margin-right: 2%;
+	margin-bottom: 2%;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+.actions:hover {
+  opacity: 1;
+}
+
+.delete,
+.share,
+.unshare,
+.link {
+	cursor: pointer;
+}
+
+.sharing {
+  display: inline;
+  margin-left: 15px;
+}
+
+.link {
+	color: #444;
+	text-decoration: none;
+	margin-right: 15px;
+	display: none;
+}
+
+.unshare {
+	display: none;
+}
+
+.delete:hover,
+.share:hover,
+.unshare:hover,
+.link:hover {
+	text-decoration: underline;
+}
+
+.is-shared .link,
+.is-shared .unshare {
+	display: initial;
+}
+
+.is-shared .share {
+	display: none;
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+
+/* keep in sync with value in utils.js */
+@media (max-width: 1024px) {
+
+	body > .scrollbox {
+		width: 100%;
+    margin: 0;
+		overflow-x: hidden;
+	}
+
+  .snap-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    overflow: auto;
+    background: #fcfcfc url(../img/noise.png) repeat;
+    -webkit-overflow-scrolling: touch;
+            transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+	  -webkit-box-shadow: 0 0 20px -2px rgba(100,100,110,.3);
+	  box-shadow: 0 0 20px -2px rgba(100,100,110,.3);
+  }
+
+  .editor, .backdrop {
+    padding-right: 4%;
+  }
+
+  .actions {
+    margin-right: 5%;
+    margin-bottom: 5%;
+  }
+
+	.snapjs-left .editor, .snapjs-left .backdrop {
+		opacity: .5;
+	}
+
+	aside {
+		opacity: 1;
+    font-size: 24px;
+    background: #fcfcfc url(../img/noise.png) repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 265px;
+    -webkit-overflow-scrolling: touch;
+	}
+
+	.add {
+    padding:4px .5em;
+  }
+
+	.entries {
+    /* always show scrollbar on mobile to prevent scroll issues */
+		overflow-y: auto;
+	}
+
+	.entries a {
+    padding: 10px 0 10px 14px;
+  }
+
+  .entries a:hover,
+  .entries a:focus {
+		color: initial; /* prevent flickering when scrolling on mobile */
+	}
+
+	.menu-button {
+    display: block;
+    z-index: 1;
+    left: 0; top: 0;
+    padding: 14px;
+    cursor: pointer;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    /* prevent grey flash when clicking */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+	}
+
+	footer {
+    display: none;
+  }
+
+  .date {
+    display: none;
+  }
+
+/* end of Smartphone styles */
+}
+
+
+@media print {
+	.entries,
+  .menu-button,
+  footer,
+  #remotestorage-connect {
+		display: none;
+	}
+
+	body, .editor , .backdrop{
+		margin: 0;
+		padding: 10px;
+		height: auto;
+		width: auto;
+		position: static;
+	}
+
+}
+
+.editor {
+  z-index: 2;
+}
+
+.backdrop {
+  position: absolute;
+  z-index: 1;
+  /* border: 2px solid #685972; */
+  /* background-color: #fff; */
+  overflow: auto;
+  pointer-events: none;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.highlights {
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	color: transparent;
+}
+
+mark {
+  border-radius: 3px;
+  color: transparent;
+  /* background-color: #b1d5e5; */
+  background-color:rgba(255,255,0,.5);
+}
+

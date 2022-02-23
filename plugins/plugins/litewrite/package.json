@@ -1,0 +1,36 @@
+{
+	"id":"litewrite",
+	"name":"Litewrite",
+	"title":"{{LNG.Litewrite.meta.title}}",
+	"version":"4.63",
+	"source":{
+		"icon":"{{pluginHost}}litewrite/img/litewrite-touch.svg",
+		"thumb":"",
+		"className":"font-icon icon-bar-chart bg-blue-7",
+		"screenshoot":["{{pluginHost}}static/screenshot.png",
+						"{{pluginHost}}static/screenshot1.png",
+						"{{pluginHost}}static/screenshot2.png"
+		]
+	},
+	"category":"tools",
+	"description":"{{LNG.Litewrite.meta.desc}}",
+	"keywords":"",
+	"auther":{
+		"copyright":"Litewrite",
+		"homePage":"https://github.com/litewrite/litewrite"
+	},
+	"configItem":{
+		"pluginAuth":{
+			"type":"userSelect",
+			"value":"role:1",
+			"display":"{{LNG.Plugin.config.auth}}",
+			"desc":"{{LNG.Plugin.config.authDesc}}",
+			"require":1
+		},
+		"menuSubMenu":{
+			"type":"switch",
+			"value":1,
+			"display":"{{LNG.menu_sub_menu}}"
+		}
+	}
+}

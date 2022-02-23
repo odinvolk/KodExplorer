@@ -1,0 +1,78 @@
+body{
+	margin: 0px;
+	font-family:"Helvetica Neue","Helvetica","Microsoft Yahei","微软雅黑",
+	"Lantinghei SC","STXihei","WenQuanYi Micro Hei",sans-serif;
+	line-height: 1.4em;
+	word-break: break-word;
+	font-size: 13px;
+}
+::-webkit-scrollbar {width: 4px;height: 8px;}
+::-webkit-scrollbar-thumb {
+	background-color: #d7d7d7;
+	height: 50px;
+	outline-offset: -2px;
+	outline: 1px solid #fff;
+	-webkit-border-radius: 4px;
+	border: 2px solid transparent;
+}
+::-webkit-scrollbar-track-piece {
+	background-color: transparent;
+	-webkit-border-radius: 0;
+}
+
+
+#tocView li, #bookmarksView li,#titlebar{
+	font-family:"Helvetica Neue","Helvetica","Microsoft Yahei","微软雅黑","Lantinghei SC","STXihei","WenQuanYi Micro Hei",sans-serif;
+}
+a{cursor:pointer;}
+.arrow{
+	font-size: 64px;
+	color: rgba(79,79,79,0.2);
+	background: rgba(0,0,0,0.01);
+	width: 80px;
+	height: 80px;
+	line-height: 70px;
+	border-radius: 50%;
+	text-align: center;
+	z-index: 10;
+}
+.arrow#pre{left:20px;}
+.arrow#next{right:20px;}
+.arrow:hover{background: rgba(0,0,0,0.2);}
+@media only screen and (max-width: 550px){
+	.arrow{margin-top: -40px;top:50%;}
+}
+@media only screen and (max-device-width: 480px) and (orientation: portrait){
+	#viewer {
+	    width: 256px;
+	    height: 432px;
+	}
+}
+
+
+#main{background:#fff;border-radius: 0;box-shadow: rgba(0,0,0,0.1) 0px 0px 100px inset;box-shadow:none;}
+#sidebar{background:#eee;}
+#tocView .list_item{display:block;}
+#tocView .list_item a{color: #444;display: block;padding:4px 10px 4px 40px;}
+#tocView .list_item.parent a{font-weight:800;padding:4px 10px 4px 20px;}
+#tocView .list_item.parent a.toc_toggle{height: 4px;padding: 0;line-height: 0;}
+#tocView .list_item.currentChapter > a.toc_link,
+#tocView .list_item.currentChapter > a.toc_link:hover{background: #c5e6ff;}
+#tocView .list_item ul {padding-left: 10px;margin-top: 8px;}
+#tocView .list_item a:hover{background:#ddd;}
+#tocView li,#bookmarksView li {margin:0;width:100%;}
+#tocView > ul, #bookmarksView > ul{margin:0;padding:0;}
+
+#viewer {width: 90%;height: 90%;}
+#titlebar{height:4%;}
+#divider{box-shadow:none;border:none;opacity:0.01;}
+
+#tocView .toc_toggle:before {
+    content: '▸';
+    color: #9E9E9E;
+    margin-right: -4px;
+    position: absolute;
+    margin-top: 16px;
+    margin-left: 6px;
+    font-size: 16px;
+}

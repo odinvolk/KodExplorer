@@ -1,0 +1,42 @@
+{
+	"id":"svgView",
+	"name":"{{LNG.svgView.meta.title}}",
+	"title":"",
+	"version":"1.0",
+	"source":{
+		"className":"x-item-file x-jpg",
+		"screenshoot":[
+			"{{staticPath}}images/wall_page/1.jpg",
+			"{{staticPath}}images/wall_page/5.jpg"
+		]
+	},
+	"category":"media,file",
+	"description":"{{LNG.svgView.meta.desc}}",
+	"keywords":"",
+	"auther":{
+		"copyright":"odinvolk",
+		"homePage":"https://github.com/odinvolk",
+	},
+	"configItem":{
+		"pluginAuth":{
+			"type":"userSelect",
+			"value":"all:1",
+			"display":"{{LNG.Plugin.config.auth}}",
+			"desc":"{{LNG.svgView.config.plugins.desc}}",
+			"require":10
+		},
+		"sep1001":"<hr/>",
+		"fileExt":{
+			"type":"tags",
+			"display":"{{LNG.Plugin.Config.fileExt}}",
+			"desc":"{{LNG.Plugin.Config.fileExtDesc}}",
+			"value":"svg,cur,webp",
+		},
+		"fileSort":{
+			"type":"number",
+			"display":"{{LNG.Plugin.Config.fileSort}}",
+			"desc":"{{LNG.Plugin.Config.fileSortDesc}}",
+			"value":1
+		}
+	}
+}

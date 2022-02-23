@@ -1,0 +1,41 @@
+{
+	"id":"ofdView",
+	"name":"ofdView",
+	"title":"Предварительный просмотр файла",
+	"version":"1.2",
+	"source":{
+		"icon":"{{pluginHost}}static/images/icon.png",
+		"screenshoot":[
+			"{{pluginHost}}static/images/screenshoot1.png"
+		]
+	},
+	"category":"file",
+	"description":"ofd Предварительный просмотр файла",
+	"keywords":"",
+	"auther":{
+		"copyright":"kodcloud.",
+		"homePage":"http://www.kodcloud.com"
+	},
+	"configItem":{
+		"pluginAuth":{
+			"type":"userSelect",
+			"value":"all:1",
+			"display":"{{LNG.Plugin.config.auth}}",
+			"desc":"{{LNG.Plugin.config.authDesc}}",
+			"require":1
+		},
+		"sep1001":"<hr/>",
+		"fileExt":{
+			"type":"tags",
+			"display":"{{LNG.Plugin.Config.fileExt}}",
+			"desc":"{{LNG.Plugin.Config.fileExtDesc}}",
+			"value":"ofd"
+		},
+		"fileSort":{
+			"type":"number",
+			"display":"{{LNG.Plugin.Config.fileSort}}",
+			"desc":"{{LNG.Plugin.Config.fileSortDesc}}",
+			"value":100
+		}
+	}
+}

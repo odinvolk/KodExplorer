@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html manifest="cache.manifest">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0">
+
+	<title>Litewrite</title>
+	<meta name="description" content="distraction-free writing">
+
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+
+	<link rel="stylesheet" href="style/litewrite.css">
+	<link rel="shortcut icon" href="img/litewrite.png">
+	<link rel="apple-touch-icon-precomposed" href="img/litewrite-touch.png">
+	<link rel="icon" sizes="192x192" href="img/litewrite-touch.png">
+</head>
+
+<body>
+	<div id="snap-content" class="snap-content scrollbox">
+		<svg id="menu-button" class="menu-button" height="15" width="15">
+			<path d="m0 0v3h15v-3h-15zm0 6v3h15v-3h-15zm0 6v3h15v-3h-15z"/>
+		</svg>
+
+		<div id="remotestorage-connect"></div>
+		<div class="backdrop">
+			<div class="highlights"></div>
+		</div>
+    <textarea id="editor" class="editor"></textarea>
+
+    <div class="actions">
+      <span id="delete" class="delete hide"></span>
+      <div id="sharing" class="sharing hide">
+        <span class="share"></span>
+        <a class="link" target="litewrite-public"></a>
+        <span class="unshare"></span>
+      </div>
+    </div>
+
+		<div id="date" class="date"></div>
+	</div>
+
+  <aside>
+    <input type="search" id="search" class="search hide">
+    <div id="add" class="add">+</div>
+    <ul id="entries" class="entries scrollbox"></ul>
+
+    <footer>
+      <a href="http://github.com/litewrite/litewrite" target="_blank">open source</a>
+    </footer>
+  </aside>
+
+	<script src="litewrite.min.js"></script>
+</body>
+
+</html>
