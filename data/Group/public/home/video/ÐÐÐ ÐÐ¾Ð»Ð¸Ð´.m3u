@@ -1,0 +1,25 @@
+#EXTM3U
+#EXTVLCOPT:network-caching=1000
+#EXTINF:-1   tvg-logo="НВП Болид" tvg-name="НВП Болидл",1 ППКОП с функциями СКД С2000-4 Теория
+http://199.116.250.222/video/93/391yNxips3koeG.flv
+#EXTVLCOPT:network-caching=1000
+#EXTINF:-1   tvg-logo="НВП Болид" tvg-name="НВП Болидл",1 ППКОП с функциями СКД С2000-4 Ответы на вопросы
+http://199.116.250.222/video/93/3065EkGB0VIE2v.flv
+#EXTVLCOPT:network-caching=1000
+#EXTINF:-1   tvg-logo="НВП Болид" tvg-name="НВП Болидл",2 Контроллер доступа С2000-2 Теория
+http://199.116.250.222/video/93/406zq9B9winain.flv
+#EXTVLCOPT:network-caching=1000
+#EXTINF:-1   tvg-logo="НВП Болид" tvg-name="НВП Болидл",2 Контроллер доступа С2000-2 Ответы на вопросы
+http://199.116.250.222/video/93/322fmOkAGDZrAK.flv
+#EXTVLCOPT:network-caching=1000
+#EXTINF:-1   tvg-logo="НВП Болид" tvg-name="НВП Болидл",3 ПО АРМ Орион Теория
+http://199.116.250.222/video/93/426q8N4FfCK47g.flv
+#EXTVLCOPT:network-caching=1000
+#EXTINF:-1   tvg-logo="НВП Болид" tvg-name="НВП Болидл",3 ПО АРМ Орион Ответы на вопросы
+http://199.116.250.222/video/93/338VOpRVDd8HSH.flv
+#EXTVLCOPT:network-caching=1000
+#EXTINF:-1   tvg-logo="НВП Болид" tvg-name="НВП Болидл",3 ПО АРМ Орион Ответы на вопросы
+http://youtu.be/H9d6bUwlDRo
+#EXTVLCOPT:network-caching=1000
+#EXTINF:-1   tvg-logo="НВП Болид" tvg-name="НВП Болидл",3 ПО АРМ Орион Ответы на вопросы
+http://www.youtube.com/playlist?list=UUfF6Gr7NAues8i0-B3JH5jw
