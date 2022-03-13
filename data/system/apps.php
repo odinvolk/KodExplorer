@@ -51,12 +51,12 @@
         "resize": 1,
         "undefined": 0
     },
-    "55555": {
+    "www.jb51.net": {
         "type": "app_link",
         "content": "window.open('http:\/\/www.jb51.net','_self','width=500,heigh=500,toolbar=1,location=1,directories==1,status=1,menubar=1,scrollbars=1,resizable=1')",
         "group": "tools",
-        "name": "55555",
-        "desc": "55555",
+        "name": "www.jb51.net",
+        "desc": "www.jb51.net",
         "icon": "oexe.png",
         "width": "800",
         "height": "600",
