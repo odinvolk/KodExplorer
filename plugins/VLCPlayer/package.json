@@ -1,7 +1,7 @@
 {
 	"id":"VLCPlayer",
 	"name":"VLC Player",
-	"title":"VLC 播放器",
+	"title":"VLC Плеер",
 	"version":"1.33",
 	"source":{
 		"icon":"{{pluginHost}}static/images/icon.png"
