@@ -6,7 +6,7 @@ kodReady.push(function(){
 		sort:"{{config.fileSort}}",
 		icon:'{{pluginHost}}static/images/icon.png',
 		callback:function(path,ext){
-			if(isWap()){//ios不支持文件下载
+			if(isWap()){//ios Загрузка файлов не поддерживается
 				window.open(core.path2url(path));
 				return;
 			}
@@ -52,7 +52,7 @@ kodReady.push(function(){
 			var msg = '<div class="row can-select" style="position:absolute;top:40%;width:100%;">\
 			 <div class="col-md-8 col-md-offset-2">\
 			 <div class="alert alert-warning" role="alert">\
-			 <h5>抱歉，该插件仅支持windows系统</h5> </div>  </div></div>';
+			 <h5>К сожалению, этот плагин поддерживает только системы Windows</h5> </div>  </div></div>';
 			return msg;
 		}
 
@@ -70,11 +70,11 @@ kodReady.push(function(){
 
 		player += '<div class="row can-select error-tips hidden" style="position:absolute;top:40%;width:100%;">\
 		 <div class="col-md-8 col-md-offset-2"><div class="alert alert-warning">\
-			<h4> VLC播放器尚未安装<br/><br/></h4>\
-			<p>请先安装 <a href="'+download+'">VLC播放器</a> 安装后需重新启动浏览。<br/>\
-			或将文件<a href="'+src+'">下载</a>到本地用电脑播放器播放。<br/><br/>\
-			注: 该插件需要activex支持，只支持windows,不支持firefox和chrome50+(屏蔽了activex功能),建议使用360极速、QQ浏览器、UC浏览器、猎豹等\
-			</p>\
+			<h4> VLC Проигрыватель еще не установлен<br/><br/></h4>\
+			<p> Пожалуйста, установите <a href="'+download+'">VLC player</a> после установки вам необходимо перезапустить просмотр.<br/>\
+			Или загрузите файл <ahref="'+src+'"></a> на локальный компьютерный проигрыватель для воспроизведения.<br/><br/>\
+			Примечание: Для этого плагина требуется поддержка activex. Он поддерживает только Windows, но не firefox и chrome50+ (функция activex заблокирована). Рекомендуется использовать 360 Speed, QQ browser, UC browser, Cheetah и т.д.\
+			< / p>\
 		</div>\
 		</div></div>';
 		return player;
